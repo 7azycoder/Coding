@@ -1,0 +1,40 @@
+# Stack
+LIFO
+
+## Stack Operations
+isEmpty()
+push(x)
+pop()
+peek()
+size()
+
+## Corner cases for Stack
+
+Underflow: When pop() or peek() called on an empty Stack
+Overflow: When push() called on a full Stack
+
+## Applications of stack
+
+1. Function calls
+2. Checking for balanced parentheses
+3. Reversing items
+4. Infix to prefix/postfix conversion
+5. Evaluation of postfix/prefix
+6. Stock span problem and its variations
+7. Undo/Redo or Forward/Backward
+
+# Stack using STL
+
+All operations have O(1) time complexity
+
+Stack can be implemented in any of underlying container that provides following operations:
+- back
+- size
+- empty
+- push_back
+- pop_back
+
+List, vector and dequeue all provide these functionalities. Thus, stack can be implemented using any of these containers. By default, stack is implemented using dequeue container.
+Since stack is implemented using other containers and works as an interface, it is also called container adapter. Queue, priority queue are also container adapters.
+All operation of stack are O(1) in all containers.
+
